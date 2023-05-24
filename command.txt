@@ -1,0 +1,34 @@
+
+1)ls -p | grep -v /
+sunbeam@sunbeam-suyash:~/Operating_System/LabExam$ ls -p | grep -v /
+command.txt
+demo.txt
+menu.sh
+script01.sh
+script02.sh
+script.sh
+xyz.sh
+
+2)wc -l demo.txt
+sunbeam@sunbeam-suyash:~/Operating_System/LabExam$ wc -l demo.txt
+2 demo.txt
+
+3)read -p "Enter file name: " filename && stat -c "%U" "$filename"
+sunbeam@sunbeam-suyash:~/Operating_System/LabExam$ read -p "Enter file name: " filename && stat -c "%U" "$filename"
+Enter file name: demo.txt
+sunbeam
+
+4)chmod u+rw xyz.sh
+sunbeam@sunbeam-suyash:~/Operating_System/LabExam$ ls -l xyz.sh
+-rw-rw-r-- 1 sunbeam sunbeam 0 May 20 15:49 xyz.sh
+sunbeam@sunbeam-suyash:~/Operating_System/LabExam$ chmod u+rw xyz.sh
+sunbeam@sunbeam-suyash:~/Operating_System/LabExam$ ls -l xyz.sh
+-rw-rw-r-- 1 sunbeam sunbeam 0 May 20 15:49 xyz.sh
+
+5)echo "Suy ash" | tr ' ' '\n'
+sunbeam@sunbeam-suyash:~/Operating_System/LabExam$ echo "Suy ash" | tr ' ' '\n'
+
+Suy
+ash
+
+
